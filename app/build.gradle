@@ -22,6 +22,10 @@ android {
         }
     }
 
+    packagingOptions {
+        pickFirst '**/libFLAC.so'
+    }
+
     lintOptions {
         checkReleaseBuilds false
     }
